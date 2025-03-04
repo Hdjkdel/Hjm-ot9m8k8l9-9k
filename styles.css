@@ -1,0 +1,114 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('11.gif') center/cover no-repeat;
+    color: #fff;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    
+    backdrop-filter: blur(0px);
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+   
+    animation: fadeIn 1.5s ease-in-out;
+    width: 350px;
+}
+
+.logo {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin: 10px 0 20px 0;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 80px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    transition: 0.3s;
+}
+
+input:focus {
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 128, 255, 0.6);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8), #00c6ff, #0072ff);
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 128, 255, 0.3);
+}
+
+.hint {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-top: 20px;
+}
+
+.hint a {
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.hint a:hover {
+    color: #0072ff;
+}
+
+/* Animation for the login box */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

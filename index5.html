@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Wallet Balance</title> 
+    <link rel="stylesheet" href="stylesx.css"> 
+</head> 
+<body> 
+    <div class="container"> 
+        <h2>Wallet balance</h2> 
+        <p class="subtitle">TOTAL BALANCE OF WALLETS FOUND</p> 
+        <div id="balance-box" class="balance-box"> 
+            <h1 id="total-balance">0,00$</h1> 
+            <p>Total Balance</p> 
+        </div> 
+        <div id="crypto-balances" class="crypto-balances"> 
+            <div class="crypto"><span id="btc">0,0$</span> <b>BTC</b></div> 
+            <div class="crypto"><span id="eth">0,0$</span> <b>ETH</b></div> 
+            <div class="crypto"><span id="bnb">0,0$</span> <b>BNB</b></div> 
+            <div class="crypto"><span id="sol">0,0$</span> <b>SOL</b></div> 
+            <div class="crypto"><span id="trx">0,0$</span> <b>TRX</b></div> 
+            <div class="crypto"><span id="usdt">0,0$</span> <b>USDT</b></div> 
+            <div class="crypto"><span id="doge">0,0$</span> <b>DOGE</b></div> 
+            <div class="crypto"><span id="matic">0,0$</span> <b>MATİC</b></div> 
+       
+        </div> 
+        <div class="wallet-input"> 
+            <input type="text" id="walletAddress" placeholder="Enter your Wallet"> 
+            <button id="hideButton">✅</button> 
+        </div>
+        <p>.</p> 
+         <p>.</p> 
+        <button id="withdrawBtn" class="withdraw-btn">WITHDRAW</button> 
+        </div> 
+        <p>.</p>
+                <p>.</p>
+                        <p>.</p>
+                                <p>.</p>
+    </div> 
+    <div class="fixed-footer">
+ <button class="icon-btn" onclick="window.location.href='index.html'">
+            <img src="seach.png" alt="BTC">
+        </button>
+        <button class="icon-btn" onclick="window.location.href='index5.html'">
+            <img src="dahsbord.png" alt="ETH">
+        </button>
+        <button class="icon-btn" onclick="window.location.href='indexsport.html'">
+            <img src="spport.png" alt="TRX">
+        
+  </button>
+    
+    <!-- GIF ve Resim için alan -->
+  <div id="overlay" class="overlay" style="display: none;">
+    <img id="gif" class="gif-image" src="1.gif" alt="Processing...">
+  </div>
+  <img id="warning-image" class="warning-image" src="error.png" alt="Warning" style="display: none;">
+    <script src="scriptx.js"></script> 
+</body>
+</html>

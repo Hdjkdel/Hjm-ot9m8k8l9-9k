@@ -1,0 +1,72 @@
+body { font-family: 'Orbitron', Arial, sans-serif; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 99vh; background: url('11.gif') no-repeat center center/cover; color: #ffffff; text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); }
+
+.container { text-align: center; width: 90%; max-width: 400px; text-align: left;
+
+padding: 10px;
+
+}
+
+.coin-container {
+  display: flex;
+  align-items: center; /* Logo ve yazıyı dikeyde ortalar */
+  border: 2px solid #00bfff; /* Çerçeve ekler */
+  padding: 5px 7px; /* Üst-alt: 10px, Sağ-sol: 25px */
+  background-color: white; /* Çerçeveyi belirginleştirmek için arka plan */
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 1%;
+  margin-right: 10px;
+}
+
+.price {
+  margin-left: auto; /* Yazıyı sağa yaslar */
+}
+
+/* Sabit Alt Çerçeve */ .fixed-footer { position: fixed; bottom: 0; left: 0; right: 0; height: 50px; background: rgba(0, 0, 50, 0.8); display: flex; justify-content: space-around; align-items: center; border-top: 2px solid #00bfff; z-index: 1000; }
+
+.icon-btn { background: none; border: none; cursor: pointer; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; border-radius: 8px; transition: background-color 0.3s, box-shadow 0.3s; }
+
+.icon-btn:hover { background-color: rgba(0, 191, 255, 0.2); box-shadow: 0 0 8px #00bfff; }
+
+.icon-btn img { width: 30px; height: 30px; filter: drop-shadow(0 0 5px rgba(0, 191, 255, 0.8)); }
+
+.title { font-size: 23px; font-weight: bold; margin-bottom: 16px; color: #00bfff; text-align: center; }
+
+.box { height: 410px; overflow: hidden; background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 10px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0, 255, 255, 0.4); text-align: left; position: relative; }
+
+.message { font-size: 14px; line-height: 1.6; color: #ffffff; white-space: nowrap; animation: scrollText 15s linear infinite; }
+
+.stats-box { background: rgba(255, 255, 255, 0.1); padding: 16px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0, 255, 255, 0.4); margin-bottom: 32px; text-align: left; font-size: 18px; font-weight: bold; }
+
+.small-text { font-size: 15px; color: #cccccc; }
+
+.large-text { font-size: 20px; font-weight: bold; color: #ffffff; }
+
+.buttons { display: flex; justify-content: space-between; gap: 8px; }
+
+button { width: 48%; padding: 13px; font-size: 16px; border: none; cursor: pointer; border-radius: 14px; transition: transform 0.2s, box-shadow 0.3s; }
+
+button:hover { transform: scale(1.05); }
+
+#stop { background-color: #d3dbf5; color: #000; font-weight: bold; box-shadow: 0 0 5px #d3dbf5; }
+
+#start { background-color: #00bfff; color: #ffffff; font-weight: bold; box-shadow: 0 0 10px #00bfff; }
+
+@keyframes scrollText { 0% { top: 100%; } 100% { top: -100%; } }
+
+button:focus, button:active { outline: none; } 
+/* Alt Bar */ .bottom-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0, 0, 50, 0.8); box-shadow: 0 -2px 5px rgba(0, 191, 255, 0.4); display: flex; justify-content: space-around; align-items: center; height: 60px; z-index: 1000; padding: 0; margin: 0; }
+
+/* Alt bar butonları */ .bottom-bar button { background: none; border: none; color: #8c8c8c; display: flex; flex-direction: column; align-items: center; font-size: 12px; cursor: pointer; transition: color 0.3s, text-shadow 0.3s; }
+
+.bottom-bar button:hover { color: #00bfff; text-shadow: 0 0 5px #00bfff; }
+
+/* Aktif buton stili */ .bottom-bar button.active { color: #00bfff; text-shadow: 0 0 8px #00bfff; }
+
+/* Alt bar ikon boyutları */ .bottom-bar button img { width: 24px; height: 24px; margin-bottom: 5px; filter: drop-shadow(0 0 5px rgba(0, 191, 255, 0.8)); }
+
+Bu CSS hatalımı
+

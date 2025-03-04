@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('11.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.option-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option-box:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.main-text {
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: bold; 
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00bfff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.circle.selected {
+  background-color: white;
+
+}
+
+#start-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #00b;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+#start-button:hover {
+  background-color: #000fff;
+}
+/* Sabit Alt Çerçeve */
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: rgba(0, 0, 50, 0.8);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid #00bfff;
+  z-index: 1000;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.icon-btn:hover {
+  background-color: rgba(0, 191, 255, 0.2);
+  box-shadow: 0 0 8px #00bfff;
+}
+
+.icon-btn img {
+  width: 30px;
+  height: 30px;
+  filter: drop-shadow(0 0 5px rgba(0, 191, 255, 0.8));
+}
