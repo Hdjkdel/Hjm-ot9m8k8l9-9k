@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Screen</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-image: url('11.gif'); /* Buraya resminizin yolu gelecek */
+    background-size: cover; /* Resmin tamamını kapsar */
+    background-position: center center; /* Resmi ortalar */
+    background-attachment: fixed; /* Arka planın kaymamasını sağlar */
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+
+        .support-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            background-color: #121d33;
+            border: 2px solid #1f3b64;
+            border-radius: 8px;
+            color: white;
+            padding: 15px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .faq-item:hover {
+            border-color: #4a90e2;
+            background-color: #1f3b64;
+        }
+
+        .contact-button {
+            background-color: #4a90e2;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 15px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #357ab8;
+        }
+
+       
+/* Sabit Alt Çerçeve */
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: rgba(0, 0, 50, 0.8);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid #00bfff;
+  z-index: 1000;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.icon-btn:hover {
+  background-color: rgba(0, 191, 255, 0.2);
+  box-shadow: 0 0 8px #00bfff;
+}
+
+.icon-btn img {
+  width: 30px;
+  height: 30px;
+  filter: drop-shadow(0 0 5px rgba(0, 191, 255, 0.8));
+}
+    </style>
+</head>
+<body>
+    <div class="support-container">
+        <h1>Support</h1>
+        <h2>F.A.Q.</h2>
+        <div class="faq-grid">
+            <button class="faq-item">How many devices can it be used on?</button>
+            <button class="faq-item">How to withdraw money?</button>
+            <button class="faq-item">Forgot your password?</button>
+            <button class="faq-item">How to get the full version?</button>
+        </div>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <button onclick="location.href='https://t.me/D_admin_D00';" class="contact-button">CONTACT SUPPORT</button>
+      </div> <!-- Sabit alt çerçeve --> 
+  <div class="fixed-footer"> <button class="icon-btn" onclick="window.location.href='index.html'"> <img src="seach.png" alt="BTC"> </button> <button class="icon-btn" onclick="window.location.href='index5.html'"> <img src="dahsbord.png" alt="ETH"> </button> <button class="icon-btn" onclick="window.location.href='indexsport.html'"> <img src="spport.png" alt="TRX"> </button> 
+  </div> 
+</body>
+</html>
